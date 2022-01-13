@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <title>Educational RC</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!---------Container-------->
+  <div id="container" class="animate-bottom">
+    <!---------Wrapper Container---------->
+    <div id="wrap" >
+      <div id="loader"></div>
+      <div id="card" class="animate-bottom" >
+        <audio id="tickAudio" src="utilities/tick.mp3" preload="auto"></audio>
+        <!-------Header------>
+        <div id="header" >
+          <span id="button1" class="button1">
+            <img src="utilities/audio_icon.png">
+          </span>
+          <span class="title" >
+            Listen and tick (&#x2714;). Then say
+          </span>
+        </div>
+        <!---------Header Ends--------->
+        <audio id="audio1" src="utilities/correct.mp3" preload="auto"></audio>
+        <audio id="audio2" src="utilities/incorrect.mp3" preload="auto"></audio>
+        <!----------Background-------->
+        <div id="background" >
+          <!-----------Card Content Starts--------->
+          <div id="outer">
+            <div id="out">
+              <div class="card-content">
+                <div class="inner">
+                  <!--Content-->
+                  <div id="slide1" >
+                    <div  class="questions-container">
+                      <span class="num">1</span>
+                      <div id="img1" >
+                        <span id="circle1">a</span>
+                        <img src="utilities/img1.png">
+                        <span id="right1"><img src="utilities/right.png"/></span>
+                      </div>
+                      <div id="img2">
+                        <span id="circle2">b</span>
+                        <img src="utilities/img2.png">
+                        <span id="wrong1"><img src="utilities/wrong.png"/></span>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div id="slide2" >
+                  <div  class="questions-container slide">
+                    <span class="num">2</span>
+                    <div id="img3">
+                      <span id="circle1">a</span>
+                      <img src="utilities/img3.png">
+                      <span id="wrong2"><img src="utilities/wrong.png"/></span>
+                    </div>
+                    <div id="img4">
+                      <span id="circle2">b</span>
+                      <img src="utilities/img4.png">
+                      <span id="right2"><img src="utilities/right.png"/></span>
+                    </div>
+                </div>
+              </div>
+
+
+
+                  <!--Content Ends-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------Card Content Ends------->
+        </div>
+        <!---------Background Ends------->
+        <!-----------Footer-------------->
+        <div id="footer" >
+          <div id="last-line" >
+            <div class="div1">
+              <span id="button3" class="button3">
+              <img src="utilities/btn3.png">
+              </span>
+            </div>
+            <div  class="div2">
+
+              <audio id="aud1" controls preload="metadata">
+                <source  src="utilities/audio1.mp3" >
+              </audio>
+              <audio  id="aud2" controls preload="metadata">
+                <source  src="utilities/audio2.mp3" >
+              </audio>
+
+            </div>
+            <div class="div3">
+              <span id="button2" class="button2">
+                <img src="utilities/btn2.png">
+            </div>
+            <div class="div4">
+              <span id="button4" class="button4">
+                <img src="utilities/btn4.png">
+              </span>
+            </div>
+            <div class="div5">
+              <span id="button5" class="button5">
+                <img src="utilities/btn5.png">
+                <a id="next"></a>
+            </div>
+            <div class="div6">
+              <div id="pageNumber" class="pageNumber">1 of 2</div>
+            </div>
+            <div class="div7">
+              <span id="button6" class="button6">
+                <img src="utilities/btn6.png">
+                <a id="prev"></a>
+            </div>
+          </div>
+        </div>
+        <!-----------Footer Ends-------------->
+      
+      </div>
+    </div>
+  </div>
+
+  
+
+<script src="js/app.js"></script>
+</body>
+</html>
