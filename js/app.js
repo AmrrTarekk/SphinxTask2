@@ -153,6 +153,12 @@ function refreshAll() {
   img4.addEventListener('click', rightAns2);
   button4.style.opacity = "1"
   button4.style.cursor = "pointer"
+  aud2.pause();
+  aud2.currentTime = 0;
+
+  aud1.pause();
+  aud1.currentTime = 0;
+
 }
 
 
@@ -166,6 +172,8 @@ function refresh12() {
     img2.addEventListener('click', wrongAns1);
     button4.style.opacity = "1"
     button4.style.cursor = "pointer"
+    aud1.pause();
+    aud1.currentTime = 0;  
   } else if ( pageNumber.innerHTML === "2 of 2" ) {
     img3.style.opacity = "1";
     right2.style.visibility = "hidden";
@@ -175,6 +183,8 @@ function refresh12() {
     img4.addEventListener('click', rightAns2);
     button4.style.opacity = "1"
     button4.style.cursor = "pointer"
+    aud2.pause();
+    aud2.currentTime = 0;  
   }
 }
 
@@ -189,6 +199,8 @@ function showAns() {
     img2.removeEventListener('click', wrongAns1);
     button4.style.opacity = "0.5"
     button4.style.cursor = "default"
+    aud1.pause();
+    // aud2.currentTime = 0;
   } else if ( pageNumber.innerHTML === "2 of 2" ){
     img3.style.opacity = "0.5";
     right2.style.visibility = "visible";
@@ -198,6 +210,9 @@ function showAns() {
     img4.removeEventListener('click', rightAns2);
     button4.style.opacity = "0.5"
     button4.style.cursor = "default"
+    aud2.pause();
+    // aud2.currentTime = 0;
+
   }
 }
 
